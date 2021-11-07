@@ -9,7 +9,6 @@ import Foundation
 class NewsListViewModel {
     
     // MARK: - Propeties
-    
     var newsArticles = Observer(value: [NewsApiArticle]())
     
     var pageSize = 20
@@ -21,17 +20,14 @@ class NewsListViewModel {
     }
     
     // MARK: - Dependency
-    
     let apiService: NewsApiProtocol
     
     // MARK: - Lifecycle
-    
     init(apiService: NewsApiProtocol = NewsApi()) {
         self.apiService = apiService
     }
     
     // MARK: - Functions
-    
     func resetPage(onComplete: @escaping() -> (Void)) {
         currentPage = 1
         self.newsArticles.value = []
@@ -41,7 +37,6 @@ class NewsListViewModel {
     }
     
     // MARK: - Api Calls
-    
     func fetchData(onComplete: @escaping() -> (Void)) {
         apiService.getNewsItems(pageSize: self.pageSize, page: self.currentPage, apiKey: Secrets.newsApiKey) { obj in
             let dataResponse = obj?.articles

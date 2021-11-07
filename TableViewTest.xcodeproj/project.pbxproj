@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5432BAF12737F1CA00E8B5A5 /* NewsListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5432BAF02737F1CA00E8B5A5 /* NewsListViewControllerTest.swift */; };
 		54CAE2C52734022D00DAF756 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAE2C42734022D00DAF756 /* AppDelegate.swift */; };
 		54CAE2C72734022D00DAF756 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAE2C62734022D00DAF756 /* SceneDelegate.swift */; };
 		54CAE2CF2734022D00DAF756 /* TableViewTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54CAE2CD2734022D00DAF756 /* TableViewTest.xcdatamodeld */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5432BAF02737F1CA00E8B5A5 /* NewsListViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewControllerTest.swift; sourceTree = "<group>"; };
 		54CAE2C12734022D00DAF756 /* TableViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54CAE2C42734022D00DAF756 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54CAE2C62734022D00DAF756 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				54CAE2FD2734E92D00DAF756 /* NewsListViewController.swift */,
+				5432BAF02737F1CA00E8B5A5 /* NewsListViewControllerTest.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 			files = (
 				54CAE2DF2734023000DAF756 /* TableViewTestTests.swift in Sources */,
 				54CAE3DD2737D2F200DAF756 /* NewsListViewModelTest.swift in Sources */,
+				5432BAF12737F1CA00E8B5A5 /* NewsListViewControllerTest.swift in Sources */,
 				54CAE3DB2737CF7500DAF756 /* MockNewsApiRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -35,8 +35,7 @@ class NewsListTableViewCell: UITableViewCell {
     }()
     
     // MARK: - Constraints
-    
-    func addBackViewConstraints() {
+        func addBackViewConstraints() {
         backView.translatesAutoresizingMaskIntoConstraints = false
         backView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: CGFloat(0)).isActive = true
         backView.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: CGFloat(0)).isActive = true
@@ -69,7 +68,6 @@ class NewsListTableViewCell: UITableViewCell {
     }
 
     // MARK: - Lifecycle
-    
     func configure(data: NewsApiArticle) {
         self.titleNameLbl.text = data.title
         self.descriptionLbl.text = data.description

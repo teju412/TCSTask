@@ -7,7 +7,7 @@
 import Foundation
 
 struct NewsApiResponse: Codable {
-    let status : String?
+    let status: String?
     let totalResults: Int?
     let articles: [NewsApiArticle]?
 }

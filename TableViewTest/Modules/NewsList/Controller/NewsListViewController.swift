@@ -9,16 +9,13 @@ import UIKit
 class NewsListViewController: UIViewController {
     
     // MARK: - Propeties
-    
-    var tableView = UITableView()
+    var myTableView = UITableView()
     let refreshControl = UIRefreshControl()
     
     // MARK: - Dependency
-    
     let viewModel: NewsListViewModel
     
     // MARK: - Lifecycle
-    
     init(viewModel: NewsListViewModel = NewsListViewModel()) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -40,15 +37,14 @@ class NewsListViewController: UIViewController {
     }
     
     // MARK: - Setup
-    
     func setTableView() {
-        tableView.frame = self.view.frame
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.separatorColor = UIColor.clear
-        tableView.estimatedRowHeight = 120
-        self.view.addSubview(tableView)
-        tableView.register(NewsListTableViewCell.self, forCellReuseIdentifier: "Cell")
+        myTableView.frame = self.view.frame
+        myTableView.delegate = self
+        myTableView.dataSource = self
+        myTableView.separatorColor = UIColor.clear
+        myTableView.estimatedRowHeight = 120
+        self.view.addSubview(myTableView)
+        myTableView.register(NewsListTableViewCell.self, forCellReuseIdentifier: "Cell")
         addObservor()
         viewModel.fetchData {}
     }
@@ -56,15 +52,14 @@ class NewsListViewController: UIViewController {
     func addObservor() {
         viewModel.newsArticles.addObserver { _ in
             DispatchQueue.main.async {
-                self.tableView.reloadData()
+                self.myTableView.reloadData()
             }
         }
     }
     
     // MARK: - Refresh
-    
     func setupRefresh() {
-        tableView.refreshControl = refreshControl
+        myTableView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(onPullRefresh), for: .valueChanged)
     }
     
@@ -78,7 +73,6 @@ class NewsListViewController: UIViewController {
 }
 
 // MARK: - TableView Delegate
-
 extension NewsListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
