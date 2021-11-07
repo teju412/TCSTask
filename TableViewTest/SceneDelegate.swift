@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let navController = UINavigationController.init(rootViewController: NewsListViewController())
         navController.navigationBar.prefersLargeTitles = true
-        navController.navigationBar.backgroundColor = .white
+        //navController.navigationBar.backgroundColor = .white
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         window?.rootViewController = navController

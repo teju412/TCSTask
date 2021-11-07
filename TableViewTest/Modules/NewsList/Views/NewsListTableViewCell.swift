@@ -70,7 +70,7 @@ class NewsListTableViewCell: UITableViewCell {
     func configure(data: NewsApiArticle) {
         self.titleNameLbl.text = data.title
         self.descriptionLbl.text = data.description
-        self.userImage.load(url: URL(string: data.urlToImage!)!)
+        self.userImage.load(urlString: data.urlToImage!)
         addViews()
     }
     

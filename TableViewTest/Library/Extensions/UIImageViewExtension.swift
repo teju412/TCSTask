@@ -6,17 +6,14 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 extension UIImageView {
-    func load(url: URL) {
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.image = image
-                    }
-                }
-            }
+    func load(urlString: String) {
+        AF.request(urlString).responseImage { response in
+            guard let data = response.data else { return }
+            self.image = UIImage(data: data, scale: UIScreen.main.scale)!
         }
     }
 }
