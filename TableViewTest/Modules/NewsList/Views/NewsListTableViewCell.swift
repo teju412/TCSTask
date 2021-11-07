@@ -5,7 +5,6 @@ import UIKit
 class NewsListTableViewCell: UITableViewCell {
     
     // MARK: - Components
-    
     lazy var backView: UIView = {
         let view = UIView(frame: .zero)
         return view
@@ -23,7 +22,7 @@ class NewsListTableViewCell: UITableViewCell {
         let lbl = UILabel(frame: .zero)
         lbl.textAlignment = .left
         lbl.numberOfLines = 0
-        lbl.font = UIFont.boldSystemFont(ofSize: 18)
+        lbl.font = .boldSystemFont(ofSize: 18)
         return lbl
     }()
     
