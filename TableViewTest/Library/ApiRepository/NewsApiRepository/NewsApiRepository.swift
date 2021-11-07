@@ -7,9 +7,13 @@
 
 import Foundation
 
-class NewsApi {
+protocol NewsApiProtocol {
+    func getNewsItems(pageSize: Int, page: Int, apiKey: String, onComplete: @escaping(NewsApiResponse?) -> Void)
+}
+
+class NewsApi: NewsApiProtocol {
     
-    static func getNewsItems(pageSize: Int, page: Int, apiKey: String, onComplete: @escaping(NewsApiResponse?) -> Void) {
+    func getNewsItems(pageSize: Int, page: Int, apiKey: String, onComplete: @escaping(NewsApiResponse?) -> Void) {
         
         let url = "\(ApiUrls.newsApiUrl)?q=apple&pageSize=\(pageSize)&page=\(page)&apiKey=\(apiKey)"
         
