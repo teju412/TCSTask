@@ -46,15 +46,14 @@ class NewsListTableViewCell: UITableViewCell {
     func addUIImageViewConstraints() {
         userImage.translatesAutoresizingMaskIntoConstraints = false
         userImage.leadingAnchor.constraint(equalTo: backView.leadingAnchor, constant: CGFloat(20)).isActive = true
-        userImage.topAnchor.constraint(equalTo: backView.topAnchor, constant: CGFloat(20)).isActive = true
-        userImage.bottomAnchor.constraint(greaterThanOrEqualTo: backView.bottomAnchor, constant: CGFloat(-20)).isActive = true
+        userImage.topAnchor.constraint(equalTo: backView.topAnchor, constant: CGFloat(40)).isActive = true
         userImage.heightAnchor.constraint(equalToConstant: CGFloat(80)).isActive = true
         userImage.widthAnchor.constraint(equalToConstant: CGFloat(80)).isActive = true
     }
     
     func addTitleNameLabelConstraints() {
         titleNameLbl.translatesAutoresizingMaskIntoConstraints = false
-        titleNameLbl.leadingAnchor.constraint(equalTo: userImage.trailingAnchor, constant: CGFloat(20)).isActive = true
+        titleNameLbl.leadingAnchor.constraint(equalTo: userImage.trailingAnchor, constant: CGFloat(45)).isActive = true
         titleNameLbl.trailingAnchor.constraint(equalTo: backView.trailingAnchor, constant: CGFloat(-20)).isActive = true
         titleNameLbl.topAnchor.constraint(equalTo: backView.topAnchor, constant: CGFloat(10)).isActive = true
     }
