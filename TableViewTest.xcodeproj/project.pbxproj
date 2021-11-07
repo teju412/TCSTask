@@ -11,7 +11,6 @@
 		54CAE2C52734022D00DAF756 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAE2C42734022D00DAF756 /* AppDelegate.swift */; };
 		54CAE2C72734022D00DAF756 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAE2C62734022D00DAF756 /* SceneDelegate.swift */; };
 		54CAE2CF2734022D00DAF756 /* TableViewTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54CAE2CD2734022D00DAF756 /* TableViewTest.xcdatamodeld */; };
-		54CAE2D12734023000DAF756 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54CAE2D02734023000DAF756 /* Assets.xcassets */; };
 		54CAE2D42734023000DAF756 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54CAE2D22734023000DAF756 /* LaunchScreen.storyboard */; };
 		54CAE2DF2734023000DAF756 /* TableViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAE2DE2734023000DAF756 /* TableViewTestTests.swift */; };
 		54CAE2E92734023000DAF756 /* TableViewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAE2E82734023000DAF756 /* TableViewTestUITests.swift */; };
@@ -28,6 +27,9 @@
 		54CAE3D92737BB0100DAF756 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAE3D82737BB0100DAF756 /* Secrets.swift */; };
 		54CAE3DB2737CF7500DAF756 /* MockNewsApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAE3DA2737CF7500DAF756 /* MockNewsApiRepository.swift */; };
 		54CAE3DD2737D2F200DAF756 /* NewsListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAE3DC2737D2F200DAF756 /* NewsListViewModelTest.swift */; };
+		54EB4F0A2738133B0041D5C2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 54EB4F092738133B0041D5C2 /* Alamofire */; };
+		54EB4F0D2738181E0041D5C2 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 54EB4F0C2738181E0041D5C2 /* AlamofireImage */; };
+		54EB4F0F27381B700041D5C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54EB4F0E27381B700041D5C2 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +55,6 @@
 		54CAE2C42734022D00DAF756 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54CAE2C62734022D00DAF756 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		54CAE2CE2734022D00DAF756 /* TableViewTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TableViewTest.xcdatamodel; sourceTree = "<group>"; };
-		54CAE2D02734023000DAF756 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54CAE2D32734023000DAF756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54CAE2D52734023000DAF756 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54CAE2DA2734023000DAF756 /* TableViewTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +74,7 @@
 		54CAE3D82737BB0100DAF756 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		54CAE3DA2737CF7500DAF756 /* MockNewsApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsApiRepository.swift; sourceTree = "<group>"; };
 		54CAE3DC2737D2F200DAF756 /* NewsListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModelTest.swift; sourceTree = "<group>"; };
+		54EB4F0E27381B700041D5C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TableViewTest/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EB4F0A2738133B0041D5C2 /* Alamofire in Frameworks */,
+				54EB4F0D2738181E0041D5C2 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +131,7 @@
 				54CAE2C62734022D00DAF756 /* SceneDelegate.swift */,
 				54CAE2FC2734E91800DAF756 /* Modules */,
 				54CAE30B2734ED9200DAF756 /* Library */,
-				54CAE2D02734023000DAF756 /* Assets.xcassets */,
+				54EB4F0E27381B700041D5C2 /* Assets.xcassets */,
 				54CAE2D22734023000DAF756 /* LaunchScreen.storyboard */,
 				54CAE2D52734023000DAF756 /* Info.plist */,
 				54CAE2CD2734022D00DAF756 /* TableViewTest.xcdatamodeld */,
@@ -275,6 +279,10 @@
 			dependencies = (
 			);
 			name = TableViewTest;
+			packageProductDependencies = (
+				54EB4F092738133B0041D5C2 /* Alamofire */,
+				54EB4F0C2738181E0041D5C2 /* AlamofireImage */,
+			);
 			productName = TableViewTest;
 			productReference = 54CAE2C12734022D00DAF756 /* TableViewTest.app */;
 			productType = "com.apple.product-type.application";
@@ -347,6 +355,10 @@
 				Base,
 			);
 			mainGroup = 54CAE2B82734022D00DAF756;
+			packageReferences = (
+				54EB4F082738133B0041D5C2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				54EB4F0B2738181E0041D5C2 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 54CAE2C22734022D00DAF756 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -364,7 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54CAE2D42734023000DAF756 /* LaunchScreen.storyboard in Resources */,
-				54CAE2D12734023000DAF756 /* Assets.xcassets in Resources */,
+				54EB4F0F27381B700041D5C2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +585,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A32VHM5D6N;
@@ -601,6 +614,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A32VHM5D6N;
@@ -760,6 +774,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54EB4F082738133B0041D5C2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		54EB4F0B2738181E0041D5C2 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		54EB4F092738133B0041D5C2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54EB4F082738133B0041D5C2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		54EB4F0C2738181E0041D5C2 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54EB4F0B2738181E0041D5C2 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		54CAE2CD2734022D00DAF756 /* TableViewTest.xcdatamodeld */ = {
