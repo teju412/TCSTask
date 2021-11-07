@@ -44,9 +44,9 @@ TableViewTest
 
 # Screenshots
 
-![Recording](./images/TCS.gif)
+![Recording](images/TCS.gif)
 
 
 # Test Coverage
 
-![Test Coverage](./images/TCS-test-coverage.png)
+![Test Coverage](images/TCS-test-coverage.png)
