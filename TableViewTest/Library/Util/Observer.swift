@@ -4,7 +4,8 @@
 //
 
 import Foundation
-class ObserverClass<T> {
+
+class Observer<T> {
     var value:T?{
         didSet {
             observerBlock?(value)
@@ -19,4 +20,3 @@ class ObserverClass<T> {
         self.observerBlock = observer
     }
 }
-
