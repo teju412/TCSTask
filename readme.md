@@ -44,9 +44,9 @@ TableViewTest
 
 # Screenshots
 
-![Recording](images/TCS.gif)
+<img src="https://raw.githubusercontent.com/teju412/TCSTask/master/Images/TCS.gif" width="300" height="600"/>
 
 
 # Test Coverage
 
-![Test Coverage](images/TCS-test-coverage.png)
+<img src="https://raw.githubusercontent.com/teju412/TCSTask/master/Images/TCS-test-coverage.png" width="750" height="300"/>
