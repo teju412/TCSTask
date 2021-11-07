@@ -1,18 +1,17 @@
 # Contents
-- Features
-- FolderStructure
-- ScreenShots
+- [Features](#features)
+- [FolderStructure](#folder-structure)
+- [ScreenShots](#screenshots)
+- [Test coverage](#test-coverage)
 
----
 
-## Features
+# Features
 - Load table of news articles from API - [Link to API](https://newsapi.org/)
 - Pull to Refresh
 - Pagination on scroll down of articles
 
----
 
-## Folder Structure
+# Folder Structure
 
 ```
 TableViewTest
@@ -43,6 +42,11 @@ TableViewTest
       └─ Observer
 ```
 
----
+# Screenshots
 
-## Screenshots
+<img src="./images/TCS.gif" width="300px" height="600px"/>
+
+
+# Test Coverage
+
+<img src="./images/TCS Test Coverage.png" width="750px" height="300px"/>
