@@ -8,10 +8,7 @@
 import Foundation
 
 struct ApiUrls {
-    
     static var newsApiUrl: String {
         return "https://newsapi.org/v2/everything"
     }
-
 }
-
